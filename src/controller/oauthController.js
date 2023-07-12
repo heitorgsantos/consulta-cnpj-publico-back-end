@@ -1,4 +1,4 @@
-const requestTokenAccess = require("../services/oauth/oauthServices");
+const requestTokenAccess = require("../src/utils/services/oauth/oauthServices");
 
 const tokenAccess = async (req, res) => {
   try {
