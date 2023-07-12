@@ -3,7 +3,7 @@ const cors = require("cors");
 const express = require("express");
 const session = require("express-session");
 const { router } = require("./routes/router");
-router
+// router
 const port = process.env.PORT || 8080;
 const app = express();
 app.use(cors());
