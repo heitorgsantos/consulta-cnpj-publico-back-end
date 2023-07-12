@@ -1,14 +1,14 @@
-const requestTokenAccess = require("../services/oauth/oauthServices");
- 
+const { requestTokenAccess } = require("../services/oauth/oauthServices");
+
 const tokenAccess = async (req, res) => {
   try {
     const { code } = req.query;
-    console.log("Controller CODE: ", code)
+    console.log("Controller CODE: ", code);
     const response = await requestTokenAccess(code);
-    return res.status(200).json(response)
+    return res.status(200).json(response);
   } catch (error) {
-    return error.message
+    return error.message;
   }
 };
 
-module.exports = {tokenAccess}; 
+module.exports = { tokenAccess };

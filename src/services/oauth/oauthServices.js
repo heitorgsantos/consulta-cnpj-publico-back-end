@@ -22,4 +22,4 @@ const requestTokenAccess = async (code) => {
   return reponseToken;
 };
 
-module.exports = requestTokenAccess;
+module.exports = {requestTokenAccess};
