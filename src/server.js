@@ -3,12 +3,13 @@ const cors = require("cors");
 const express = require("express");
 const session = require("express-session");
 const { router } = require("./routes/router");
-// router
+// const { router } = require("./routes/router");
+
 const port = process.env.PORT || 8080;
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    "Access-Control-Allow-Origin": "http://localhost:3000",
   })
 );
 app.use(express.json());
