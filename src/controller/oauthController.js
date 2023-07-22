@@ -1,4 +1,4 @@
-const { requestTokenAccess } = require("../services/oauth/oauthServices");
+const requestTokenAccess = require("../services/oauth/oauthServices");
 
 const tokenAccess = async (req, res) => {
   try {
@@ -11,4 +11,4 @@ const tokenAccess = async (req, res) => {
   }
 };
 
-module.exports = { tokenAccess };
+module.exports = tokenAccess;
