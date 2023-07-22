@@ -9,7 +9,7 @@ const port = process.env.PORT || 8080;
 const app = express();
 app.use(
   cors({
-    "Access-Control-Allow-Origin": "http://localhost:3000",
+    origin: "http://localhost:3000",
   })
 );
 app.use(express.json());
@@ -22,6 +22,6 @@ app.use(
   })
 );
 
-app.use("/", router);
+app.use(router);
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
