@@ -14,13 +14,13 @@ app.use(
 );
 app.use(express.json());
 
-app.use(
-  session({
-    secret: Math.random().toString(36).substring(2),
-    resave: false,
-    saveUninitialized: true,
-  })
-);
+// app.use(
+//   session({
+//     secret: Math.random().toString(36).substring(2),
+//     resave: false,
+//     saveUninitialized: true,
+//   })
+// );
 
 app.use(router);
 
