@@ -4,7 +4,7 @@ const { exchangeForTokens } = require("../../utils/token");
 
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
-const REDIRECT_URI = `http://consulta-cnpj-publico-back-end.vercel.app/oauth-callback`;
+const REDIRECT_URI = `http://localhost:3000/oauth-callback`;
 
 const requestTokenAccess = async (code) => {
   const authCodeProof = {
