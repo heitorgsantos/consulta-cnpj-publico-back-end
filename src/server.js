@@ -5,7 +5,7 @@ const session = require("express-session");
 const { router } = require("./routes/router");
 // const { router } = require("./routes/router");
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT ?? 8080;
 const app = express();
 app.use(
   cors({
